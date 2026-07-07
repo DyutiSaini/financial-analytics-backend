@@ -1,5 +1,11 @@
 __pycache__/
 *.pyc
+.env
 venv/
-financial_analytics.db
+
 uploads/
+charts/
+*.db
+*.db-wal
+*.db-shm
+.vscode/

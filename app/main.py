@@ -6,12 +6,14 @@ from app.routes.dashboard import router as dashboard_router
 from app.routes.schema import router as schema_router
 from app.routes.query import router as query_router
 from app.routes.ask import router as ask_router
+from app.routes.analysis import router as analysis_router
 
 app = FastAPI(
     title="Financial Analytics Backend",
     version="1.0.0"
 )
 
+app.include_router(analysis_router)
 app.include_router(dashboard_router)
 
 app.include_router(metadata_router)
